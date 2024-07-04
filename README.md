@@ -1,3 +1,7 @@
+# This is a fork of version 2024.1.6
+This fork only removes the missing and out of date warning that pops up after compilation.
+
+Nothing in this project belongs to me.
 # manifold-ij
 [![](https://img.shields.io/jetbrains/plugin/d/10057.svg)][jb-url]
 [![](https://img.shields.io/jetbrains/plugin/v/10057.svg)][jb-url]

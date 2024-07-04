@@ -59,13 +59,13 @@ public class ManLibraryChecker
   public void warnFeatureRequiresManifold( Project project )
   {
     EventQueue.invokeLater(
-      () ->
-        MessageUtil.showWarning( project, MessageUtil.Placement.CENTER,
-          "This feature requires <b>Manifold</b> dependencies, which appear to be missing from your project's build configuration.\n" +
-          "\n" +
-          "Please add or update Manifold libraries in your project to at least version: <b>" + getVersionFromPlugin() + "</b>.\n" +
-          "\n" +
-          "Visit <a href=\"http://manifold.systems/docs.html#setup\">Setup</a> to learn more about configuring Manifold libraries in your project." )
+      () -> {}
+//        MessageUtil.showWarning( project, MessageUtil.Placement.CENTER,
+//          "This feature requires <b>Manifold</b> dependencies, which appear to be missing from your project's build configuration.\n" +
+//          "\n" +
+//          "Please add or update Manifold libraries in your project to at least version: <b>" + getVersionFromPlugin() + "</b>.\n" +
+//          "\n" +
+//          "Visit <a href=\"http://manifold.systems/docs.html#setup\">Setup</a> to learn more about configuring Manifold libraries in your project." )
       );
   }
 
@@ -73,16 +73,16 @@ public class ManLibraryChecker
   {
     EventQueue.invokeLater(
       () -> {
-        if( projectJarOlderThanPluginJar( project ) )
-        {
-          MessageUtil.showWarning( project,
-            "Some of your project's <b>Manifold</b> dependencies are out of date and may\n" +
-            "not be compatible with the newer Manifold IntelliJ IDEA plugin you are using.\n" +
-            "\n" +
-            "Please add or update Manifold libraries in your project to at least version: <b>" + getVersionFromPlugin() + "</b>.\n" +
-            "\n" +
-            "Visit <a href=\"https://github.com/manifold-systems/manifold/tree/master/manifold-core-parent/manifold#projects\">Projects</a> to learn more about configuring Manifold libraries in your project." );
-        }
+//        if( projectJarOlderThanPluginJar( project ) )
+//        {
+//          MessageUtil.showWarning( project,
+//            "Some of your project's <b>Manifold</b> dependencies are out of date and may\n" +
+//            "not be compatible with the newer Manifold IntelliJ IDEA plugin you are using.\n" +
+//            "\n" +
+//            "Please add or update Manifold libraries in your project to at least version: <b>" + getVersionFromPlugin() + "</b>.\n" +
+//            "\n" +
+//            "Visit <a href=\"https://github.com/manifold-systems/manifold/tree/master/manifold-core-parent/manifold#projects\">Projects</a> to learn more about configuring Manifold libraries in your project." );
+//        }
       } );
   }
 
